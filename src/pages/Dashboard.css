@@ -1,0 +1,168 @@
+/* --- CSS Variables for a consistent and maintainable theme --- */
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-text-dark: #333;
+  --color-text-medium: #666;
+  --color-background-light: #f8f9fa;
+  --color-white: #fff;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.12);
+  --border-radius-large: 12px;
+  --border-radius-small: 8px;
+  --spacing-large: 40px;
+  --spacing-medium: 20px;
+  --card-padding: 25px;
+}
+
+/* --- General Dashboard Layout --- */
+.dashboard-container {
+  padding: var(--spacing-medium);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-container h1 {
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-large);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* --- Metrics Grid --- */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-medium);
+  margin-bottom: var(--spacing-large);
+}
+
+.metric-card {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-light);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-medium);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.metric-card.warning {
+  border-left: 4px solid var(--color-warning);
+}
+
+.metric-card.danger {
+  border-left: 4px solid var(--color-danger);
+}
+
+.metric-icon {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background-light);
+  border-radius: 50%;
+  color: var(--color-text-dark);
+}
+
+.metric-info h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-text-dark);
+  font-weight: bold;
+}
+
+.metric-info p {
+  margin: 5px 0 0 0;
+  color: var(--color-text-medium);
+  font-size: 0.9rem;
+}
+
+/* --- Quick Actions --- */
+.quick-actions {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-light);
+}
+
+.quick-actions h2 {
+  margin: 0 0 var(--spacing-medium) 0;
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: var(--border-radius-small);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn.primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.action-btn.secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.action-btn.success {
+  background: var(--color-success);
+  color: var(--color-white);
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn.primary:hover {
+  background: #0056b3;
+}
+
+.action-btn.secondary:hover {
+  background: #545b62;
+}
+
+.action-btn.success:hover {
+  background: #218838;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  .action-buttons {
+    flex-direction: column;
+  }
+  .action-btn {
+    width: 100%;
+  }
+}
