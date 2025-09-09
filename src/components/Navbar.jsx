@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ onLogout }) => {
   const location = useLocation();
 
   const isActive = (path) => {
@@ -23,7 +23,6 @@ const Navbar = () => {
       <div className="sidebar-header">
         <h1 className="app-title">Dept Billing</h1>
       </div>
-
       {/* Main Navigation */}
       <nav className="sidebar-nav">
         <div className="nav-section">
@@ -39,10 +38,11 @@ const Navbar = () => {
           ))}
         </div>
       </nav>
-
-      {/* Current URL Display */}
-      <div className="current-url">
-        <span className="url-text">localhost:5173{location.pathname}</span>
+      {/* Logout button in the footer */}
+      <div className="sidebar-footer">
+        <button onClick={onLogout} className="logout-button">
+          Logout
+        </button>
       </div>
     </div>
   );
