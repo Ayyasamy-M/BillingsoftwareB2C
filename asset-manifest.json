@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Ayyasamy-M/BillingsoftwareB2C/static/css/main.a0bc5fa4.css",
-    "main.js": "/Ayyasamy-M/BillingsoftwareB2C/static/js/main.f554eb9a.js",
-    "static/js/453.518b6d49.chunk.js": "/Ayyasamy-M/BillingsoftwareB2C/static/js/453.518b6d49.chunk.js",
-    "index.html": "/Ayyasamy-M/BillingsoftwareB2C/index.html",
-    "main.a0bc5fa4.css.map": "/Ayyasamy-M/BillingsoftwareB2C/static/css/main.a0bc5fa4.css.map",
-    "main.f554eb9a.js.map": "/Ayyasamy-M/BillingsoftwareB2C/static/js/main.f554eb9a.js.map",
-    "453.518b6d49.chunk.js.map": "/Ayyasamy-M/BillingsoftwareB2C/static/js/453.518b6d49.chunk.js.map"
+    "main.css": "/BillingsoftwareB2C/static/js/static/css/main.a0bc5fa4.css",
+    "main.js": "/BillingsoftwareB2C/static/js/static/js/main.934510ef.js",
+    "static/js/453.518b6d49.chunk.js": "/BillingsoftwareB2C/static/js/static/js/453.518b6d49.chunk.js",
+    "index.html": "/BillingsoftwareB2C/static/js/index.html",
+    "main.a0bc5fa4.css.map": "/BillingsoftwareB2C/static/js/static/css/main.a0bc5fa4.css.map",
+    "main.934510ef.js.map": "/BillingsoftwareB2C/static/js/static/js/main.934510ef.js.map",
+    "453.518b6d49.chunk.js.map": "/BillingsoftwareB2C/static/js/static/js/453.518b6d49.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a0bc5fa4.css",
-    "static/js/main.f554eb9a.js"
+    "static/js/main.934510ef.js"
   ]
 }
