@@ -159,32 +159,6 @@ const Login = ({ onLoginSuccess }) => {
             </div>
           </div>
 
-          {/* Demo Credentials Info */}
-          <div className="demo-credentials">
-            <div className="demo-info">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="16" x2="12" y2="12" />
-                <line x1="12" y1="8" x2="12.01" y2="8" />
-              </svg>
-              <div>
-                <p>
-                  <strong>Demo Credentials:</strong>
-                </p>
-                <p>Mobile: 1234567890</p>
-                <p>Password: 1234567890</p>
-              </div>
-            </div>
-          </div>
-
           {/* Submit Button */}
           <button
             type="submit"
